@@ -1,16 +1,27 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
         <link href="./styles/aestheti.css" rel="stylesheet">
+        <title>Leif</title>
     </head>
     <body>
         <div class="centered">
             <img id="ferris" alt="Leif logo" src="./img/logo-stacked.png">
-            <h1>200 Success</h1>
-            <h2>Hello World! Welcome to your Workers Site.</h2>
+
+            <p>Is your Leif always feeling sad or angry? Do you feel powerless to change it?</p>
+            <p>Generate a personalised letter to your MP to highlight the energy issues and turn Leif's frown upside down!</p>
+
+            <form method="post" id="form-letter">
+                <label>
+                    Your postcode:
+                    <input id="postcode" placeholder="BH16 5SS"/>
+                </label>
+                <button>Generate my letter</button>
+            </form>
         </div>
     </body>
 </html>
