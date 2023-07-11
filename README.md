@@ -1,38 +1,23 @@
-# create-svelte
+# leif-site
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+The source code for [https://leif.support](https://leif.support).
 
-## Creating a project
+This website is built with [SvelteKit](https://kit.svelte.dev/). This framework and the architecture choices made keep the carbon footprint low by adhering to the following principles:
 
-If you're seeing this, you've probably already done this step. Congrats!
+* minimise the amount of JS shipped at runtime
+* deploy to the edge so data doesn't have to travel far
+* minimise changes
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Deployment process
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Branches are deployed via Cloudflare Pages and can be managed in the dashboard. 
 
-## Developing
+New binary releases are managed in R2.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## URLs
 
-```bash
-npm run dev
+[Website](https://leif.support)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+[API](https://api.leif.support)
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+[Releases](https://releases.leif.support)
