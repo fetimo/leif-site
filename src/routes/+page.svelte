@@ -30,15 +30,22 @@
         }
     }
 
+    .downloads {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
     .downloads img {
         vertical-align: middle;
-        width: 170px;
+        height: 44px;
         padding-top: 1rem;
+        width: auto;
     }
 </style>
 
 <svelte:head>
-    <title>Leif</title>
+  <title>Leif</title>
   <style >
     body {
         background-color: rgb(21, 40, 51);
@@ -61,10 +68,10 @@
         <p>Reduce your carbon impact</p>
         <div class="downloads">
             <a href="https://apps.apple.com/gb/app/leif/id1635425240">
-                <img class="apple" src="./apple-store.png" alt="Download on the Mac App Store" width="195">
+                <img src="./apple-store.png" alt="Download on the Mac App Store" width="195">
             </a>
-            <a href="https://apps.apple.com/gb/app/leif/id1635425240">
-                <img class="google" src="./google-store.png" alt="Download on the Google Play Store" width="170">
+            <a href="https://apps.microsoft.com/store/detail/?launch=true&mode=full">
+                <img src="https://get.microsoft.com/images/en-GB%20dark.svg" alt="Get it from Microsoft" />
             </a>
         </div>
     </div>
