@@ -1,4 +1,11 @@
-const generateTemplate = ({mp, constituency, postcode, carbonPercent}) => `
+type Params = {
+    mp: string;
+    constituency: string;
+    postcode: string;
+    carbonPercent: string;
+}
+
+const generateTemplate = ({mp, constituency, postcode, carbonPercent}: Params) => `
 Dear ${mp},
 
 ${new Date().toLocaleDateString('en-GB')}
