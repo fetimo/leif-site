@@ -18,17 +18,9 @@
     
     h1 {
         font-size: 3.375rem;
+        font-size: clamp(1.5rem, -1.8333rem + 8.3333vw, 3.375rem);
     }
 
-    .wrapper {
-        @media (width > 900px) {
-            padding-left: 4rem;
-
-             &:first-child {
-                padding-left: 0;
-            }
-        }
-    }
 
     .downloads {
         display: flex;
@@ -37,9 +29,7 @@
     }
 
     .downloads img {
-        vertical-align: middle;
         height: 44px;
-        padding-top: 1rem;
         width: auto;
     }
 </style>
@@ -50,18 +40,15 @@
     body {
         background-color: rgb(21, 40, 51);
         background-image: url('./backgrounds/leif-blue.jpg');
-        background-size: fill;
-        color: #fff;
-        font-family: 'Inter', sans-serif;
     }
   </style>
 </svelte:head>
 
-<main>
-    <div class="wrapper">
+<main class="container">
+    <div >
         <img src="./logo-stacked.png" alt='Leif logo, a smiling cartoon, green leaf' />
     </div>
-    <div class="wrapper">
+    <div >
         <h1>Observe, change</h1>
         <p>Learn about energy in your area</p>
         <p>Discover the greenest time to charge</p>
